@@ -1,0 +1,27 @@
+body {
+    padding-top: 5rem;
+}
+.chat-container {
+    max-width: 800px;
+    margin: auto;
+}
+#chatbox {
+    height: 400px;
+    overflow-y: auto;
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+.chat-message {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+.user-message {
+    background-color: #d1e7dd;
+    text-align: right;
+}
+.assistant-message {
+    background-color: #f8d7da;
+}

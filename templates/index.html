@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  
+  <title>Chatbot Interface</title>
+</head>
+  <body>
+
+  <div class="container chat-container">
+      <h1 class="text-center mb-4">GPT Assistant</h1>
+      <div id="chatbox" class="mb-3">
+          <!-- Chat messages will be displayed here -->
+      </div>
+      <div id="loading" class="text-center" style="display: none;">
+          <div class="spinner-border text-primary" role="status">
+              <span class="visually-hidden">Loading...</span>
+          </div>
+      </div>
+      <div class="input-group">
+          <input type="text" id="messageInput" class="form-control" placeholder="Type your message here..." />
+          <button class="btn btn-primary" onclick="sendMessage()">Send</button>
+      </div>
+  </div>
+
+  <!-- Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+  </body>
+</html>
